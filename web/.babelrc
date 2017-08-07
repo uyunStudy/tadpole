@@ -1,0 +1,25 @@
+{
+    "presets": [
+        "es2015",
+        "react",
+        "stage-0"
+    ],
+    "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        [
+            "transform-es2015-classes",
+            {
+                "loose": true
+            }
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": true
+            }
+        ],
+        "react-hot-loader/babel"
+    ]
+}

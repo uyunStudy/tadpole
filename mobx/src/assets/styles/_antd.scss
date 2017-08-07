@@ -1,0 +1,209 @@
+// Input
+.ant-input {
+    padding-left: 10px;
+    height: 30px;
+    outline-width: 0;
+    border: 1px solid #41A4E2;
+    border-radius: 2px;
+    background-color: #0D5990;
+    color: #FFFFFF;
+    line-height: 30px;
+    transition: all .2s;
+    &:focus {
+        background-color: #1C77B8;
+        box-shadow: none;
+    }
+}
+.ant-input-affix-wrapper {
+    .ant-input-prefix,
+    .ant-input-suffix {
+        color: inherit;
+    }
+}
+.ant-input-search-icon {
+    &:hover {
+        color: inherit;
+    }
+}
+
+// Select
+.ant-select-selection {
+    border: none;
+    background-color: #1C426B;
+    color: #5E8BBD;
+}
+.ant-select-dropdown {
+    background-color: #1D6AA7;
+}
+.ant-select-dropdown-menu-item {
+    color: #2DB7F5;
+}
+.ant-select-dropdown-menu-item-selected,
+.ant-select-dropdown-menu-item-selected:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+.ant-select-dropdown-menu-item:hover {
+    background-color: #1C426B;
+}
+
+// Popover 
+.ant-popover-inner {
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: transparent;
+}
+.ant-popover-inner-content {
+    padding: 0;
+    color: inherit;
+}
+
+// Checkbox
+.ant-checkbox-disabled.ant-checkbox-checked {
+    .ant-checkbox-inner {
+        &:after {
+            border-color: #FFFFFF;
+        }
+    }
+}
+.ant-checkbox-checked {
+    .ant-checkbox-inner {
+        border-color: #276490 !important;
+        background-color: #2378C3 !important;
+    }
+}
+.ant-checkbox-disabled {
+    & + span {
+        color: inherit;
+        opacity: .5;
+    }
+    .ant-checkbox-inner {
+        border-color: #1E76AE !important;
+        background-color: #07476F;
+    }
+}
+.ant-checkbox-inner {
+    border: 1px solid #1E76AE;
+    background-color: #07476F;
+}
+
+// Pagination
+.ant-pagination {
+    text-align: right;
+}
+
+// Spin
+.ant-spin-blur {
+    overflow: visible;
+    background-color: transparent;
+}
+
+.ant-spin-blur:after {
+    background-color: transparent;
+}
+
+// Progress
+.ant-progress-circle-trail {
+    stroke: #183559;
+}
+
+// Tooltip
+.ant-tooltip-inner {
+    max-width: 355px;
+}
+
+// Table
+.ant-table-fixed-header {
+    .ant-table-scroll {
+        .ant-table-header {
+            overflow: auto;
+        }
+    }
+}
+.ant-table-fixed-left,
+.ant-table-fixed-left table {
+    border-radius: 0;
+}
+.ant-table {
+    border-radius: 0;
+    color: #FFFFFF;
+    table {
+        border-radius: 0;
+    }
+}
+.ant-table-header {
+    table {
+        border-radius: 0;
+    }
+}
+.ant-table-thead > tr > th {
+    padding: 0;
+    height: 50px;
+    background: #153253;
+    color: #57C5F7;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+}
+.ant-table-tbody {
+    & > tr {
+        background-color: #0D3F67;
+        &:hover {
+            background-color: #1B3E67 !important;
+            & > td {
+                background-color: inherit;
+            }
+        }
+        &:nth-child(even) {
+            background-color: #104B7B;
+        }
+        & > td {
+            padding: 10px;
+            height: 40px;
+            border-bottom: 0;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+}
+.ant-table-thead > tr.ant-table-row-hover > td,
+.ant-table-tbody > tr.ant-table-row-hover > td,
+.ant-table-thead > tr:hover > td,
+.ant-table-tbody > tr:hover > td {
+    background: inherit;
+}
+
+// Tabs 
+.ant-tabs-bar {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.ant-tabs-nav {
+    .ant-tabs-tab {
+        margin-right: 0;
+        padding: 0 30px;
+        color: #FFFFFF;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+    .ant-tabs-tab-active {
+        background-color: #1D6AA7;
+    }
+}
+
+.ant-tabs-ink-bar {
+    z-index: -1;
+}
+
+.ant-tabs-nav-container {
+    margin-bottom: 0;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.ant-tabs-nav-scroll {
+    background-color: #153253;
+}

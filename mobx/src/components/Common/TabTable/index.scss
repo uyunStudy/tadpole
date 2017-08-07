@@ -1,0 +1,134 @@
+@import "../../../assets/styles/mixin";
+
+.tab-table {
+    position: relative;
+    :global {
+        .ant-table-placeholder {
+            display: none;
+        }
+        .ant-table-tbody > tr > td {
+            cursor: pointer;
+        }
+    }
+}
+
+.tab-header {
+    height: 40px;
+    background-color: #153253;
+    line-height: 40px;
+    :global {
+        .btn {
+            border-radius: 0;
+            background-color: inherit;
+        }
+    }
+    .tab-active {
+        background-color: #1D6AA7;
+        cursor: default;
+    }
+}
+
+.tab-placeholder {
+    margin: 20px 0;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.control-bar {
+    padding: 0 10px;
+    height: 50px;
+    background-color: #1C426E;
+    color: #FFFFFF;
+    line-height: 50px;
+}
+
+.filter {
+    // float: right;
+    display: inline-block;
+    margin-right: 10px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.options {
+    float: right;
+    :global {
+        .btn {
+            padding: 0 10px;
+            height: 30px;
+            font-size: 13px;
+            line-height: 30px;
+            i,
+            span {
+                vertical-align: middle;
+            }
+            .iconfont {
+                color: inherit;
+            }
+        }
+    }
+
+    .not-allow {
+        background-color: #666666;
+        cursor: not-allowed;
+    }
+}
+
+.col-option {
+    padding: 20px;
+    width: 350px;
+    background-color: #226EAF;
+    color: #FFFFFF;
+    font-size: 12px;
+    :global {
+        .ant-checkbox-wrapper {
+            width: 33.333%;
+            height: 25px;
+            line-height: 25px;
+
+            @include toe;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+    dt {
+        margin: 10px 0;
+        font-weight: bold;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.color-type {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.color-type0 {
+    background-color: #FC615D;
+}
+.color-type1 {
+    background-color: #F19D5A;
+}
+.color-type2 {
+    background-color: #D98989;
+}
+.color-type3 {
+    background-color: #F9F364;
+}
+.color-type4 {
+    background-color: #7499E1;
+}
+.color-type5 {
+    background-color: #7CCF6E;
+}
+.color-type6 {
+    background-color: #937AD1;
+}

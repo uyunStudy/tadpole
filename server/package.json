@@ -1,0 +1,33 @@
+{
+  "name": "yfbook-server",
+  "version": "1.0.0",
+  "description": "YoFoon Read Book",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --harmony app.js"
+  },
+  "author": "YoFoon",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.2",
+    "cheerio": "^0.22.0",
+    "eventproxy": "^0.3.5",
+    "koa": "^1.2.4",
+    "koa-bodyparser": "^2.2.0",
+    "koa-cors": "0.0.16",
+    "koa-generic-session": "^1.11.3",
+    "koa-json": "^1.1.3",
+    "koa-logger": "^1.3.0",
+    "koa-router": "^5.4.0",
+    "koa-session-mongoose": "^1.0.0",
+    "koa-static": "^2.0.0",
+    "lodash": "^4.16.6",
+    "mongoose": "^4.6.5",
+    "q": "^1.4.1",
+    "superagent": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
